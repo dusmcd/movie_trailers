@@ -1,12 +1,16 @@
 import webbrowser
 
-#Movie class will be used in the media.py file to create movie objects
+
+# Movie class will be used in the media.py file to create movie objects
+
 class Movie():
+
     """This class contains information about movie objects """
 
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
+
     def __init__(self, movie_title, movie_storyline, poster_image,
-     trailer_youtube):
+                 trailer_youtube):
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
